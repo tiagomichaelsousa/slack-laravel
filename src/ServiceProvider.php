@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Slack\Laravel;
 
-use Slack\Slack;
+use Slack;
 use Slack\Client;
 use Slack\Contracts\ClientContract;
 use Slack\Laravel\Exceptions\TokenIsMissing;
