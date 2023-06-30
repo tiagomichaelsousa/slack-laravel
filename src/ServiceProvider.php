@@ -24,7 +24,7 @@ final class ServiceProvider extends BaseServiceProvider implements DeferrablePro
         $this->app->singleton(ClientContract::class, static function (): Client {
             $token = config('slack.token');
 
-            if (!is_string($token)) {
+            if (! is_string($token)) {
                 throw TokenIsMissing::create();
             }
 
@@ -45,7 +45,7 @@ final class ServiceProvider extends BaseServiceProvider implements DeferrablePro
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__ . '/../config/slack.php' => config_path('slack.php'),
+                __DIR__.'/../config/slack.php' => config_path('slack.php'),
             ]);
         }
     }
