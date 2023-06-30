@@ -1,3 +1,10 @@
+# misc
+.DS_Store
+*.pem
+
+/.idea
+/.vscode
+
 /.phpunit.result.cache
 /.phpunit.cache
 /.php-cs-fixer.cache
@@ -7,3 +14,4 @@
 /vendor/
 *.swp
 *.swo
+
